@@ -27,7 +27,7 @@ class Variable:
     def cleargrad(self):
         self.grad = None
 
-    def backward(self, retain_grad = False):
+    def backward(self, retain_grad=False):
         if self.grad is None:
             self.grad = np.ones_like(self.data)
 
